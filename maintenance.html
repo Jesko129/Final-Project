@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg Maintenance</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Koenigsegg Car Maintenance</h2>
+        <nav class="navigation">
+            <a href="Services.html">Back</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="description">
+        <h3>Regular Maintenance Schedule</h3>
+        <ul>
+            <li>Change engine oil and filter every 3,000 miles or as recommended in your owner's manual.</li>
+            <li>Inspect and replace air filters as needed.</li>
+            <li>Check and maintain tire pressure.</li>
+            <li>Inspect and replace brake pads and rotors according to the manufacturer's recommendations.</li>
+            <li>Perform regular fluid checks, including coolant, brake fluid, and transmission fluid.</li>
+            <li>Inspect the suspension system for wear and tear.</li>
+            <li>Verify the functionality of lights, including headlights, taillights, and turn signals.</li>
+        </ul>
+        <div class="SPMSection">
+            <p><h2><input type="checkbox" id="SPM">Specialized Maintenance</h2>
+            Koenigsegg cars are high-performance vehicles with unique engineering. In addition to regular maintenance, it is
+            recommended to schedule specialized maintenance with authorized Koenigsegg service centers. This may include
+            advanced diagnostics, software updates, and thorough inspections by trained technicians.
+        </p>
+    </div>
+        <div class="EMMSection">
+            <p><h2><input type="checkbox" id="EMM">Emergency Maintenance</h2>
+                In the event of a breakdown or emergency, contact your nearest Koenigsegg service center for assistance. Follow the
+                guidelines provided in your owner's manual for emergency procedures and contact information.
+            </p>  
+        </div>  
+    </div>
+    
+</div>
+
+    <button class="maintenance-button" onclick="completeMaintenance()">Apply Maintenance?</button>
+    <div class="maintenance-success" id="maintenanceSuccess">You have successfully serviced your car!</div>
+
+    <script>
+        function completeMaintenance() {
+            const checkboxSPM = document.getElementById('SPM');
+            const checkboxEMM = document.getElementById('EMM');
+            const successMessage = document.getElementById('maintenanceSuccess');
+    
+            if (checkboxSPM.checked || checkboxEMM.checked) {
+                successMessage.style.display = 'block';
+    
+                setTimeout(function () {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

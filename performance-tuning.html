@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg Performance Tuning Menu</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Keonigsegg</h2>
+        <nav class="navigation">
+            <a href="Services.html">Back</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item" id="basicPackage">
+          <h2>Basic Performance Package</h2>
+          <p>Enhance your car's horsepower and acceleration with our entry-level tuning package.</p>
+        </div>
+      
+        <div class="menu-item" id="sportPackage">
+          <h2>Sport Performance Package</h2>
+          <p>Take your Koenigsegg to the next level with increased power, improved handling, and a sportier driving experience.</p>
+        </div>
+      
+        <div class="menu-item" id="trackPackage">
+          <h2>Track Performance Package</h2>
+          <p>Optimized for track performance, this package includes advanced tuning for maximum speed and agility on the racetrack.</p>
+        </div>
+      </div>
+      
+      <div class="tuned-message" id="tunedMessage">has been installed in your keonigsegg!</div>
+      
+      <script>
+        function showMessage(packageType) {
+          const messageContainer = document.getElementById('tunedMessage');
+          messageContainer.innerText = ` ${packageType} has been installed in your keonigsegg!`;
+          messageContainer.style.display = 'block';
+        }
+      
+        document.getElementById('basicPackage').addEventListener('click', function() {
+          showMessage('Basic Performance Package');
+        });
+      
+        document.getElementById('sportPackage').addEventListener('click', function() {
+          showMessage('Sport Performance Package');
+        });
+      
+        document.getElementById('trackPackage').addEventListener('click', function() {
+          showMessage('Track Performance Package');
+        });
+      </script>
+</body>
+</html>

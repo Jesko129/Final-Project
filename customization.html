@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg Car Customization</title>
+    <link rel="stylesheet" href="customization.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Koenigsegg Car Customization Options</h2>
+        <nav class="navigation">
+            <a href="Services.html">Back</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <div class="description">
+        <p>
+            Elevate your driving experience by personalizing your Koenigsegg with a range of customization options. From
+            exterior finishes to interior details, you have the freedom to make your Koenigsegg uniquely yours.
+        </p>
+
+        <div id="exteriorSection">
+            <h2>Exterior Customization</h2>
+            <p>
+                Choose from a variety of exterior options to define the look of your Koenigsegg. Options include:
+            </p>
+            <ul>
+                <li><input type="checkbox" class="customizationCheckbox"> Custom paint colors and finishes</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Carbon fiber accents and body panels</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Unique wheel designs and finishes</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Specialized aerodynamic features</li>
+            </ul>
+        </div>
+
+        <div id="interiorSection">
+            <h2>Interior Customization</h2>
+            <p>
+                Step inside your Koenigsegg and experience luxury tailored to your preferences. Interior customization
+                options include:
+            </p>
+            <ul>
+                <li><input type="checkbox" class="customizationCheckbox"> Premium leather upholstery in various colors</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Carbon fiber or wood trim options</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Custom stitching and embroidery</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Personalized interior lighting</li>
+            </ul>
+        </div>
+
+        <div id="performanceSection">
+            <h2>Performance Enhancements</h2>
+            <p>
+                For those seeking the ultimate driving experience, consider performance enhancements such as:
+            </p>
+            <ul>
+                <li><input type="checkbox" class="customizationCheckbox"> Upgraded exhaust systems for a distinctive sound</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Performance tuning for increased horsepower</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Specialized suspension setups for enhanced handling</li>
+            </ul>
+        </div>
+
+        <div id="technologySection">
+            <h2>Technology and Entertainment</h2>
+            <p>
+                Stay connected and entertained with advanced technology options, including:
+            </p>
+            <ul>
+                <li><input type="checkbox" class="customizationCheckbox"> State-of-the-art infotainment systems</li>
+                <li><input type="checkbox" class="customizationCheckbox"> High-end audio systems with custom configurations</li>
+                <li><input type="checkbox" class="customizationCheckbox"> Advanced driver assistance features</li>
+            </ul>
+        </div>
+
+        <button id="applyButton">Apply Customization</button>
+
+        <p>
+            Consult with your authorized Koenigsegg dealer to explore the full range of customization options and create a
+            Koenigsegg that reflects your individual style and preferences.
+        </p>
+    </div>
+
+    <script>
+            applyButton.addEventListener('click', function () {
+                if (confirm('Are you sure you want to apply customization?')) {
+                    alert('Customization applied!');
+                }
+            });
+    </script>
+</body>
+
+</html>

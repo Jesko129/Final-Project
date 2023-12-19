@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koenigsegg Services</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+  <header>
+    <h1>Koenigsegg Services</h1>
+    <nav class="navigation">
+        <a href="home.html">Back</a>
+        <a href="performance-tuning.html">Performance Tuning</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="customization.html">Customization</a>
+      </nav>
+  </header>
+  <div class="description">
+    <h3>Welcome to Koenigsegg Services, where luxury meets performance. Our offerings include:</h3>
+
+    <div class="div" onclick="applyModification(this)">
+    Precision Maintenance:
+    Advanced Diagnostics for pinpoint accuracy in issue identification and Genuine Parts to ensure your vehicle's integrity.
+    <div class="success-message">Your car has been serviced!</div>
+    </div>
+
+    <div class="div" onclick="applyModification(this)">
+    Exclusive Upgrades:
+    Tailored enhancements for power and speed, along with personalized Aesthetic Options to reflect your style.
+    <div class="success-message">Your interior has been modified!</div>
+    </div>
+
+    <div class="div" onclick="applyModification(this)">
+    Concierge Assistance:
+    Enjoy convenient Doorstep Pickup for servicing and personalized Consultations to address your specific needs.
+    <div class="success-message"> You've been assisted to the needs of guests or clients.</div>
+    </div>
+
+    <div class="div" onclick="applyModification(this)">
+    Driver Training Programs:
+    Mastery of high-performance driving with Professional Instructors and a strong Safety Focus.
+    <div class="success-message">You've applied to attend the driving training!</div>
+    </div>
+
+    <div class="div" onclick="applyModification(this)">
+    Events and Exclusivity:
+    Curated Experiences such as exclusive events, track days, and networking opportunities for Community Building.
+    <div class="success-message">You're invited!</div>
+    </div>
+
+    <div class="div" onclick="applyModification(this)">
+    Tailored Financing Solutions:
+    Personalized Plans and diverse financing options to suit individual preferences.
+    <div class="success-message">Your car has been financed!</div>
+    </div>
+
+    
+    <h2>
+      Global Support Network:
+      Authorized Service Centers worldwide, providing Consistent Quality regardless of location.</h2>
+    <h2>Koenigsegg Services ensures your ownership experience is as exceptional as your vehicle.</h2>
+  </div>
+
+  <script>
+    function applyModification(element) {
+      element.classList.add('clicked');
+    }
+  </script>
+</body>
+</html>

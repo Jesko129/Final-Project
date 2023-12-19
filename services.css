@@ -1,0 +1,177 @@
+body{
+    background-image: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/08/2020Auto___Koenigsegg_2020_sports_car_Koenigsegg_Jesko_Absolut_on_the_background_of_the_logo_on_the_wall_144653_.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 7px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+.description{
+    max-width: 70vw;
+    height: 65vh;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 6n00;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+}
+  
+  .div {
+    background: transparent;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+    border-radius: 10px;
+    background-color: gray;
+  }
+  
+  .div:hover {
+    border-color: #007bff;
+  }
+  
+  .success-message {
+    display: none;
+    color: yellow;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .clicked {
+    border-color: #ffffff;
+  }
+  
+  .clicked .success-message {
+    display: block;
+  }
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.menu-item {
+  background: transparent;
+  border: 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.tuned-message {
+  display: none;
+  text-align: center;
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+#basicPackage{
+  background-color: grey;
+}
+#sportPackage{
+  background-color: blue;
+}
+#trackPackage {
+  background-color: red;
+}
+.maintenance-button {
+  margin-top: 45%;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+}
+
+.maintenance-button:hover {
+  background-color: #45a049;
+}
+
+.maintenance-success {
+  display: none;
+  text-align: center;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 55%;
+  border-radius: 5px;
+}
+.SPMSection{
+  background-color: greenyellow;
+  border-radius: 10px;
+  color: black;
+  width: 80vw;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.EMMSection{
+  background-color: darkblue;
+  border-radius: 10px;
+  width: 80vw;
+  height: 30%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
